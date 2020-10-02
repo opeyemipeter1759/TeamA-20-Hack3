@@ -3,7 +3,7 @@ Team A 2020, Hackathon 3 Repository
 
 This README explains how to get started with this repository.
 
-This repository contains code written by Team Benue 1 for the UK-NG Tech Hub/Dufuna-CodeCamp 2020 first Hackathon.
+This repository contains code written by Team A for the Dufuna-July-CodeCamp 2020 third Hackathon.
 
 # How to get started
 1. Clone this repository.
