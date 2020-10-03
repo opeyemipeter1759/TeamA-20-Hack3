@@ -1,0 +1,52 @@
+/* Home Page */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+/* Nav-bar */
+.nav-item:hover {
+border: solid 1px  #14A2B8;
+border-radius: 5px;
+background-color:  #14A2B8;
+}
+
+
+/* jumbotron */
+.jumbotron-text {
+    max-width: 50%;
+    color: white;
+}
+/* body */
+h2 {
+    text-align: center;
+}
+p {
+    text-align: justify;
+}
+.container h1{
+    color: white;
+}
+hr {
+border-top: 2px solid #14A2B8;
+}
+/* Home page ends */
+
+/* success.html styling */
+.congratulations{
+    padding-top: 50px;
+}
+
+h1, h4 {
+    text-align: center;
+}
+.icon{
+    text-align: center;
+}
+.success{
+    margin-top: 200px;
+}
+
+
+
