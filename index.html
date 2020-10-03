@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home | SME-Grants</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="./styles.css">
         </head>
@@ -14,14 +14,15 @@
         <header>
             <nav role="navigation" class="navbar navbar-expand-lg ">
                 <div class="container ml-lg-auto">
-                    <a class="navbar-brand" href="#">
-                        <img src="./images/money.svg" class="icon" alt="logo" style="width: 50px;">
-                    </a>
-                    <ul class="navbar-nav ml-lg-auto">
-                        <li class="nav-item"><a href="#" class="nav-link text-info">Grants</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link text-info">How To Apply</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link text-info">Sign Up</a></li>
-                    </ul>
+                        <a class="navbar-brand" href="#">
+                            <img src="./images/money.svg" class="icon" alt="logo" style="width: 50px;">
+                        </a>
+                        <ul class="navbar-nav ml-lg-auto">
+                            <li class="nav-item"><a href="#" class="nav-link ">Home</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link ">Grants</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link ">How To Apply</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link ">Sign Up</a></li>
+                        </ul>
                 </div>
             </nav>
         </header>
@@ -32,7 +33,7 @@
                 <div class="jumbotron-text text-justify ">
                     <p>SME-Grants is a financial services advisory organisation that provides grants to African small and medium scale businesses
                     who are in need of financial help. </p>
-                    <a href="#requirements" class="text-white">See Criteria</a>
+                    <button type="button" class="btn btn-light"><a href="#requirements" class="text-info">See Criteria</a></button>
                 </div>
             </div>
             <section id="requirements">
@@ -100,7 +101,7 @@
                         <Input type="text" name="email_address" id="email_address" placeholder="Enter your email address">
                         <button class="text- btn-info">Subscribe</button>
                     </div>
-                    <div class="col-md-4 pt-md-5 pt-3 text-white text-right">
+                    <div class="col-md-4 pt-md-5 pt-3 text-white text-right footer-nav">
                         <a href="../html-forms/contact-form.html" class="text-white">Grants</a> <br>
                         <a href="#" class="text-white">How To Apply</a> <br>
                         <a href="#" class="text-white">Sign Up</a>
