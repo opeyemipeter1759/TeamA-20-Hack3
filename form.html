@@ -1,31 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="form.css">
+   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles.css">
     <title>Forms</title>
 </head>
 <body>
+    <header>
+        <nav role="navigation" class="navbar navbar-expand-lg ">
+            <div class="container ml-lg-auto">
+                    <a class="navbar-brand" href="#">
+                        <img src="./images/money.svg" class="icon" alt="logo" style="width: 50px;">
+                    </a>
+                    <ul class="navbar-nav ml-lg-auto">
+                        <li class="nav-item"><a href="#" class="nav-link ">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link ">Grants</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link ">How To Apply</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link ">Sign Up</a></li>
+                    </ul>
+            </div>
+        </nav>
+    </header>
     <div id="main">
         <div id="heading">
             <h1>Application Form</h1>
         </div>
-        <div id="stepOne">
-            <div class="leftDiv">
-                <fieldset>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="step">
+                 <h3>Step 1: Business Owner Data Form</h3>
+                    <p>This form requires the information of the business owner.<br>This individual serves as the face of the institution and will<br> represent
+                        the institution in official meetings. Please ensure<br> the appropriate data is entered in the respective fields
+                        as this<br> will help in the processing time of the grants. Note that<br> all fields are mandatory and do click <b>"NEXT"</b> to move to the<br> next form.
+                    </p>
+                </div>
+            </div>
+                <div class="col-lg-6 col-md-6">
+                    <form class="form">
                     <input type="text" name="ownersName" placeholder="Name of Business Owner" class="control" >
                     <input type="text" name="jobTitle" placeholder="Job Title" class="control" >
-                    <input type="text" name="Identification" placeholder="National Identification Number" class="control" ><br>
-                    <label>Gender: <input type="radio" name="gender" value="male">Male <input type="radio" name="gender" value="female">Female</label><br>
-                    <label>Age: <input type="number" min="1"></label><br>
+                    <input type="text" name="Identification" placeholder="National Identification Number" class="control"><br><br>
+                    <label>Gender: <input type="radio" name="gender" value="male" id="fem">Male <input type="radio" name="gender" value="female" id="fem">Female</label><br>
+                    <label>Age: <input type="number" id="text" min="1"></label><br>
                     <label>Contact:</label><br>
                     <input type="email" name="email" placeholder="Email Address" class="control" >
                     <input type="number" name="phone" placeholder="Phone Number" class="control" >
-                    <input type="text" name="pAddress" placeholder="Permanent Address" class="control"><br>
-                    <label>City: <input type="text"></label><br>
-                    <label>State: <input type="text"></label><br>
-                    <label>Country: <select id="counryDrop" name="country"><br>
+                    <input type="text" name="pAddress" placeholder="Permanent Address" class="control"><br><br>
+                    <label>City: <input type="text" id="text"></label><br>
+                    <label>State: <input type="text" id="text"></label><br>
+                    <label>Country: <select id="countryDrop" name="country"><br>
                         <option disabled selected value>Select a Country</option><br>
                         <option value="student">Afghanistan</option><br>
                         <option value="fulltimejob">Brazil</option><br>
@@ -35,23 +64,26 @@
                         <option value="other">United States of America</option><br>
                         </select>
                     </label><br>
-                    <input type="submit" value="NEXT">
-                </fieldset>
+                    <button type="button" class="button1">Next</button>
+                </div>
+            </form>
             </div>
-            <div class="rightDiv">
-                <h3>Step 1: Business Owner Data Form</h3>
-                <p>This form requires the information of the business owner. This individual serves as the face of the institution and will represent
-                    the institution in official meetings. Please ensure the appropriate data is entered in the respective fields
-                    as this will help in the processing time of the grants. Note that all fields are mandatory and do click "NEXT" to move to the next form
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="step">
+                <h3>Step 2: Institution Data Form</h3>
+                <p>This form requires the information of the institution.<br>Classification of institutions listed in the dropdown help the<br> grant donors
+                    understand the particular needs of the business.<br> Please ensure the appropriate data is entered in the respective<br> fields
+                    as this will help in the processing time of the grants. Note<br> that all fields are mandatory and do click <b>"NEXT"</b> to move to the<br>next form.
                 </p>
             </div>
         </div>
-        <div id="stepTwo">
-            <div class="leftDiv">
-                <fieldset>
-                    <input type="text" name="bizName" placeholder="Name of Institution" class="control" ><br>
+       <div class="col-lg-6 col-md-6">
+                <form class="form">
+               <input type="text" name="bizName" placeholder="Name of Institution" class="control" ><br>
                     <input type="text" name="regNum" placeholder="CAC Registration Number" class="control">
-                    <input type="text" name="website" placeholder="Website" class="control" ><br>
+                    <input type="text" name="website" placeholder="Website" class="control" ><br><br>
                     <label>Type of Business: <select name="biztype"><br>
                         <option disabled selected value>Select a Business Type</option><br>
                         <option value="smallScale">Small Scale Venture</option><br>
@@ -60,7 +92,7 @@
                         <option value="others">Others</option><br>
                         </select>
                     </label><br>
-                    <label>Business Sector: <select name="biztype"><br>
+                    <label>Business Sector: <select name="biztype"><br><br>
                         <option disabled selected value>Select a Business Sector</option><br>
                         <option value="health">Health</option><br>
                         <option value="banking">Banking</option><br>
@@ -75,9 +107,9 @@
                     <input type="number" name="phone" placeholder="Gross Annual Income" class="control" >
                     <input type="number" name="pAddress" placeholder="How Much Grant Needed?" class="control"><br>
                     <input type="text" name="pAddress" placeholder="Postal Address" class="control"><br>
-                    <input type="number" name="pAddress" placeholder="Postal Code" class="control"><br>
-                    <label>City: <input type="text"></label><br>
-                    <label>State: <input type="text"></label><br>
+                    <input type="number" name="pAddress" placeholder="Postal Code" class="control"><br><br>
+                    <label>City: <input type="text" id="text"></label><br>
+                    <label>State: <input type="text" id="text"></label><br>
                     <label>Country: <select id="counryDrop" name="country"><br>
                         <option disabled selected value>Select a Country</option><br>
                         <option value="student">Afghanistan</option><br>
@@ -88,57 +120,76 @@
                         <option value="other">United States of America</option><br>
                         </select>
                     </label><br>
-                    <input type="submit" value="NEXT">
-                </fieldset>
+                    <button type="button"  class="button1">Next</button>
+                </form>
             </div>
-            <div class="rightDiv">
-                <h3>Step 2: Institution Data Form</h3>
-                <p>This form requires the information of the institution. Classification of institutions listed in the dropdown help the grant donors
-                    understand the particular needs of the business. Please ensure the appropriate data is entered in the respective fields
-                    as this will help in the processing time of the grants. Note that all fields are mandatory and do click "NEXT" to move to the next form
-                </p>
             </div>
         </div>
-        <div id="stepThree">
-            <div class="leftDiv">
-                <fieldset>
-                    <input type="number" name="bizName" placeholder="Enter Amount in USD"><br>
-                    <textarea placeholder="Enter purpose of the amount stated"></textarea><br>
-                    <input type="number" name="bizName" placeholder="Enter Amount in USD"><br>
-                    <textarea placeholder="Enter purpose of the amount stated"></textarea><br>
-                    <input type="number" name="bizName" placeholder="Enter Amount in USD"><br>
-                    <textarea placeholder="Enter purpose of the amount stated"></textarea><br>
-                    <input type="number" name="bizName" placeholder="Enter Amount in USD"><br>
-                    <textarea placeholder="Enter purpose of the amount stated"></textarea><br>
-                    <input type="number" name="bizName" placeholder="Enter Amount in USD"><br>
-                    <textarea placeholder="Enter purpose of the amount stated"></textarea><br>
-                    <input type="number" name="bizName" placeholder="Enter Amount in USD"><br>
-                    <textarea placeholder="Enter purpose of the amount stated"></textarea><br>
-                    <input type="submit" value="SUBMIT">
-                </fieldset>
-            </div>
-            <div class="rightDiv">
-                <h3>Step 3: Grant Utilization Data Form</h3>
-                <p>This form requires information about how the grant obtained will be utilized. Give a breakdown of the various grant sums needed and an
-                    explanation of how these sums will be utilised. Please ensure the appropriate data is entered in the respective fields
-                    as this will help in the processing time of the grants. Note that all fields are mandatory and do click "SUBMIT" to move to the next form
-                </p>
-            </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="step">
+            <h3>Step 3: Grant Utilization Data Form</h3>
+            <p>This form requires information about how the grant obtained<br> will be utilized. Give a breakdown of the various grant sums<br> needed and an
+                explanation of how these sums will be utilised.<br> Please ensure the appropriate data is entered in the respective<br> fields
+                as this will help in the processing time of the grants. Note<br> that all fields are mandatory and do click <b>"SUBMIT"</b> to move to<br> the next form.
+            </p>
         </div>
+    </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>    
+               <div class="col-lg-6 col-md-6">
+                <form class="form">
+                    <input type="number" name="bizName" placeholder="Enter Amount in USD" class="control1"><br><br>
+                    <textarea placeholder="Enter purpose of the amount stated" class="control1"></textarea><br>
+                    <input type="number" name="bizName" placeholder="Enter Amount in USD" class="control1"><br><br>
+                    <textarea placeholder="Enter purpose of the amount stated" class="control1"></textarea><br>
+                    <input type="number" name="bizName" placeholder="Enter Amount in USD" class="control1"><br><br>
+                    <textarea placeholder="Enter purpose of the amount stated" class="control1"></textarea><br>
+                    <input type="number" name="bizName" placeholder="Enter Amount in USD" class="control1"><br><br>
+                    <textarea placeholder="Enter purpose of the amount stated" class="control1"></textarea><br>
+                    <input type="number" name="bizName" placeholder="Enter Amount in USD" class="control1"><br><br>
+                    <textarea placeholder="Enter purpose of the amount stated" class="control1"></textarea><br>
+                    <input type="number" name="bizName" placeholder="Enter Amount in USD" class="control1"><br><br>
+                    <textarea placeholder="Enter purpose of the amount stated" class="control1"></textarea><br>
+                    <input type="number" name="bizName" placeholder="Enter Amount in USD" class="control1"><br><br>
+                    <button type="button"  class="button1">Submit</button>
+                </form>
+            </div>    
+        </div>
+    </div>
+    </div>
+            <div class="footer bg-info">
+                <div class="container">
+                    <div class="row">
+                        <footer class="page-footer font-small text-white pt-4 " ></footer>
+                        <div class="col-md-4 pt-5 pb-30 text-white">
+                            Contact Us
+                            <br> 
+                            <i class="fa fa-facebook fa-2x text-white"></i>
+                            <i class="fa fa-twitter fa-2x text-white"></i>
+                            <i class="fa fa-envelope fa-2x text-white"></i>
+                            <i class="fa fa-youtube-square fa-2x text-white"></i>
+                            
+                        </div>
+                        <div class="col-md-4 pt-md-5 pt-3 text-white text-md-center">
+                            <label for="email_address">Subscribe to our newsletter </label> <br>
+                            <Input type="text" name="email_address" id="email_address" placeholder="Enter your email address">
+                            <button class="text- btn-info">Subscribe</button>
+                        </div>
+                        <div class="col-md-4 pt-md-5 pt-3 text-white text-right footer-nav">
+                            <a href="../html-forms/contact-form.html" class="text-white">Grants</a> <br>
+                            <a href="#" class="text-white">How To Apply</a> <br>
+                            <a href="#" class="text-white">Sign Up</a>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-white py-3">
+                            Copyright 2020 smegrants.com All Rights Reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
     <script src="form.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

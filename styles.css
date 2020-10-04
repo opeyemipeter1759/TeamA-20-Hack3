@@ -86,54 +86,64 @@ Forms Page CSS Begins
 ******************************************/
 #heading {
     text-align: center;
-}
+    margin-top: 30px;
+   }
 
 .control {
-    width: 80%;
-    height: 30px;
+    width: 90%;
+     height: 50px;
+     margin-left: 30px;
     border-top-style: hidden;
     border-right-style: hidden;
     border-left-style: hidden;
     border-bottom-style: groove;
 }
+ branch
+.control1{
+    margin-left:40px;
+}
+label{
+    margin-left:30px ;
+    margin-bottom: 20px;
+  }
+#text{
+    width: 200px;
+}
 
-#stepOne,
-#stepTwo,
-#stepThree {
+h3{
+    margin-top: 150px;
+    }
+.form{
+    padding: 20px;
     width: 100%;
-    display: flex;
+    border:1px solid;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;
 }
-
-#stepTwo,
-#stepThree {
-    display: none;
-}
-
-.leftDiv,
-.rightDiv {
-    float: left;
-    width: 50%;
-    margin: 20px;
-    align-items: center;
-}
-
-.leftDiv {
-    text-align: left;
-}
-
-.fieldset {
-    line-height: 50px;
-    width: 100%;
-    border-radius: 15px;
+.step{
+    margin-top: 50px;
 }
 
 textarea {
-    width: 80%;
+    width:80%;
     height: 100px;
 }
 
-.leftDiv h3 {
-    text-align: center;
+branch
+.button1{
+    width: 100px;
+    margin-left: 250px;
+    border: none;
+    height: 40px;
+    border-radius: 10px;
+    background-color:#10374A;
+    color:#fff;
+    
+}
+.button1:hover{
+color: #D3D3D3;
+
 }
 
 /*******************************************
@@ -185,4 +195,5 @@ Forms Page CSS Ends
     color: white;
     text-decoration: none;
 }
-/* grant session end */
+ 
+
