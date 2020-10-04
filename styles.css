@@ -20,7 +20,12 @@
 .nav-link {
     color: #14A2B8;
 }
-
+.purple {
+    color: #10374A;
+}
+/* .navbar-toggler {
+    color: #10374A;
+} */
 /* jumbotron */
 .jumbotron-text {
     max-width: 50%;
