@@ -65,4 +65,49 @@ h1, h4 {
     margin-top: 200px;
 }
 
+/*******************************************
+Forms Page CSS Begins
+******************************************/
+#heading {
+    text-align: center;
+}
 
+.control {
+    width: 80%;
+    height: 30px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+}
+#stepOne, #stepTwo, #stepThree {
+    width: 100%;
+    display: flex;
+}
+#stepTwo, #stepThree {
+    display: none;
+}
+.leftDiv, .rightDiv {
+    float: left;
+    width: 50%;
+    margin: 20px;
+    align-items: center;
+}
+.leftDiv {
+    text-align: left;
+}
+.fieldset {
+    line-height: 50px;
+    width: 100%;
+    border-radius: 15px;
+}
+textarea {
+    width: 80%;
+    height: 100px;
+}
+.leftDiv h3 {
+    text-align: center;
+}
+/*******************************************
+Forms Page CSS Ends
+******************************************/
