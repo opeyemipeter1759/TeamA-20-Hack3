@@ -8,21 +8,14 @@
 
 /* Nav-bar */
 .nav-item a:hover {
-    border: solid 1px #14A2B8;
-    border-radius: 5px;
-    background-color: #14A2B8;
+    border: solid 1px white;
+    border-radius: 3px;
+    background-color: white;
 }
 
-.nav-link:hover {
-    color: white;
-}
-
-.nav-link {
-    color: #14A2B8;
-}
-.purple {
+/* .purple {
     color: #10374A;
-}
+} */
 /* .navbar-toggler {
     color: #10374A;
 } */
@@ -43,9 +36,11 @@
     color: #14A2B8;
 }
 
-.text-info:hover {
+.btn a:hover{
     text-decoration: none;
+    color:  #14A2B8;
 }
+
 
 /* body */
 h2 {
