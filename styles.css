@@ -20,12 +20,11 @@
 .nav-link {
     color: #14A2B8;
 }
+
 .purple {
     color: #10374A;
 }
-/* .navbar-toggler {
-    color: #10374A;
-} */
+
 /* jumbotron */
 .jumbotron-text {
     max-width: 50%;
@@ -177,4 +176,14 @@ Forms Page CSS Ends
 
 .card-title {
     font-weight: 600;
+}
+
+.breadcrumb {
+    background-color: #14A2B8 !important;
+
+}
+
+.breadcrumb-item a {
+    color: white;
+    text-decoration: none;
 }
