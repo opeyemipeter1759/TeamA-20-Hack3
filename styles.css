@@ -1,67 +1,81 @@
 /* Home Page */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
 /* Nav-bar */
 .nav-item a:hover {
-border: solid 1px  #14A2B8;
-border-radius: 5px;
-background-color:  #14A2B8;
-} 
+    border: solid 1px #14A2B8;
+    border-radius: 5px;
+    background-color: #14A2B8;
+}
+
 .nav-link:hover {
     color: white;
 }
- .nav-link{
-     color: #14A2B8;
- }
+
+.nav-link {
+    color: #14A2B8;
+}
+
 /* jumbotron */
 .jumbotron-text {
     max-width: 50%;
     color: white;
 }
-@Media (max-width:576px){
-.jumbotron-text {
-    max-width: 100%;
-}
- }
 
-.criteria{
-    background-color: white;
-    color: #14A2B8 ;
+@Media (max-width:576px) {
+    .jumbotron-text {
+        max-width: 100%;
+    }
 }
-.text-info:hover{
+
+.criteria {
+    background-color: white;
+    color: #14A2B8;
+}
+
+.text-info:hover {
     text-decoration: none;
 }
+
 /* body */
 h2 {
     text-align: center;
 }
+
 p {
     text-align: justify;
 }
-.container h1{
+
+.container h1 {
     color: white;
 }
+
 hr {
-border-top: 2px solid #14A2B8;
+    border-top: 2px solid #14A2B8;
 }
+
 /* Home page ends */
 
 /* success.html styling */
-.congratulations{
+.congratulations {
     padding-top: 50px;
 }
 
-h1, h4 {
+h1,
+h4 {
     text-align: center;
 }
-.icon{
+
+.icon {
     text-align: center;
 }
-.success{
+
+.success {
     margin-top: 200px;
 }
 
@@ -80,34 +94,82 @@ Forms Page CSS Begins
     border-left-style: hidden;
     border-bottom-style: groove;
 }
-#stepOne, #stepTwo, #stepThree {
+
+#stepOne,
+#stepTwo,
+#stepThree {
     width: 100%;
     display: flex;
 }
-#stepTwo, #stepThree {
+
+#stepTwo,
+#stepThree {
     display: none;
 }
-.leftDiv, .rightDiv {
+
+.leftDiv,
+.rightDiv {
     float: left;
     width: 50%;
     margin: 20px;
     align-items: center;
 }
+
 .leftDiv {
     text-align: left;
 }
+
 .fieldset {
     line-height: 50px;
     width: 100%;
     border-radius: 15px;
 }
+
 textarea {
     width: 80%;
     height: 100px;
 }
+
 .leftDiv h3 {
     text-align: center;
 }
+
 /*******************************************
 Forms Page CSS Ends
 ******************************************/
+/* Grant Session */
+
+.jumbotron-horn {
+
+    color: #ffffff;
+}
+
+.btn {
+    background-color: #10374A;
+    ;
+    color: #ffffff;
+}
+
+.container-title {
+    margin: 40px;
+    font-weight: 600;
+    color: #10374A;
+}
+
+.btn:hover {
+    color: grey;
+}
+
+.bg-purple {
+    background-color: #14A2B8 !important;
+    color: #FFF;
+}
+
+.bg-red {
+    background-color: #ff2d55 !important;
+    color: #FFF;
+}
+
+.card-title {
+    font-weight: 600;
+}
