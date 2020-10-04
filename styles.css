@@ -1,67 +1,83 @@
 /* Home Page */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
 /* Nav-bar */
 .nav-item a:hover {
-border: solid 1px  #14A2B8;
-border-radius: 5px;
-background-color:  #14A2B8;
-} 
-.nav-link:hover {
-    color: white;
+    border: solid 1px white;
+    border-radius: 3px;
+    background-color: white;
 }
- .nav-link{
-     color: #14A2B8;
- }
+
+.nav-link {
+    color: #14A2B8;
+}
+
+.purple {
+    color: #10374A;
+}
+
 /* jumbotron */
 .jumbotron-text {
     max-width: 50%;
     color: white;
 }
-@Media (max-width:576px){
-.jumbotron-text {
-    max-width: 100%;
-}
- }
 
-.criteria{
+@Media (max-width:576px) {
+    .jumbotron-text {
+        max-width: 100%;
+    }
+}
+
+.criteria {
     background-color: white;
-    color: #14A2B8 ;
+    color: #14A2B8;
 }
-.text-info:hover{
+
+.btn a:hover{
     text-decoration: none;
+    color:  #14A2B8;
 }
+
+
 /* body */
 h2 {
     text-align: center;
 }
+
 p {
     text-align: justify;
 }
-.container h1{
+
+.container h1 {
     color: white;
 }
+
 hr {
-border-top: 2px solid #14A2B8;
+    border-top: 2px solid #14A2B8;
 }
+
 /* Home page ends */
 
 /* success.html styling */
-.congratulations{
+.congratulations {
     padding-top: 50px;
 }
 
-h1, h4 {
+h1,
+h4 {
     text-align: center;
 }
-.icon{
+
+.icon {
     text-align: center;
 }
-.success{
+
+.success {
     margin-top: 200px;
 }
 
@@ -82,6 +98,7 @@ Forms Page CSS Begins
     border-left-style: hidden;
     border-bottom-style: groove;
 }
+ branch
 .control1{
     margin-left:40px;
 }
@@ -113,6 +130,7 @@ textarea {
     height: 100px;
 }
 
+branch
 .button1{
     width: 100px;
     margin-left: 250px;
@@ -125,11 +143,9 @@ textarea {
 }
 .button1:hover{
 color: #D3D3D3;
+
 }
+
 /*******************************************
 Forms Page CSS Ends
 ******************************************/
-
-
-
-
