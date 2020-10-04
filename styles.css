@@ -149,3 +149,50 @@ color: #D3D3D3;
 /*******************************************
 Forms Page CSS Ends
 ******************************************/
+/* Grant Session */
+
+.jumbotron-horn {
+
+    color: #ffffff;
+}
+
+.btn {
+    background-color: #10374A;
+    ;
+    color: #ffffff;
+}
+
+.container-title {
+    margin: 40px;
+    font-weight: 600;
+    color: #10374A;
+}
+
+.btn:hover {
+    color: grey;
+}
+
+.bg-purple {
+    background-color: #14A2B8 !important;
+    color: #FFF;
+}
+
+.bg-red {
+    background-color: #ff2d55 !important;
+    color: #FFF;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.breadcrumb {
+    background-color: #14A2B8 !important;
+
+}
+
+.breadcrumb-item a {
+    color: white;
+    text-decoration: none;
+}
+/* grant session end */
