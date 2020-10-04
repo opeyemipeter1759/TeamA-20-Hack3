@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="form.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <div id="main">
+        <div id="heading">
+            <h1>Application Form</h1>
+        </div>
+        <div id="stepOne">
+            <div class="leftDiv">
+                <fieldset>
+                    <input type="text" name="ownersName" placeholder="Name of Business Owner" class="control" >
+                    <input type="text" name="jobTitle" placeholder="Job Title" class="control" >
+                    <input type="text" name="Identification" placeholder="National Identification Number" class="control" ><br>
+                    <label>Gender: <input type="radio" name="gender" value="male">Male <input type="radio" name="gender" value="female">Female</label><br>
+                    <label>Age: <input type="number" min="1"></label><br>
+                    <label>Contact:</label><br>
+                    <input type="email" name="email" placeholder="Email Address" class="control" >
+                    <input type="number" name="phone" placeholder="Phone Number" class="control" >
+                    <input type="text" name="pAddress" placeholder="Permanent Address" class="control"><br>
+                    <label>City: <input type="text"></label><br>
+                    <label>State: <input type="text"></label><br>
+                    <label>Country: <select id="counryDrop" name="country"><br>
+                        <option disabled selected value>Select a Country</option><br>
+                        <option value="student">Afghanistan</option><br>
+                        <option value="fulltimejob">Brazil</option><br>
+                        <option value="fulltimelearner">Canada</option><br>
+                        <option value="prefernottosay">Nigeria</option><br>
+                        <option value="other">United Kingdom</option><br>
+                        <option value="other">United States of America</option><br>
+                        </select>
+                    </label><br>
+                    <input type="submit" value="NEXT">
+                </fieldset>
+            </div>
+            <div class="rightDiv">
+                <h3>Step 1: Business Owner Data Form</h3>
+                <p>This form requires the information of the business owner. This individual serves as the face of the institution and will represent
+                    the institution in official meetings. Please ensure the appropriate data is entered in the respective fields
+                    as this will help in the processing time of the grants. Note that all fields are mandatory and do click "NEXT" to move to the next form
+                </p>
+            </div>
+        </div>
+        <div id="stepTwo">
+            <div class="leftDiv">
+                <fieldset>
+                    <input type="text" name="bizName" placeholder="Name of Institution" class="control" ><br>
+                    <input type="text" name="regNum" placeholder="CAC Registration Number" class="control">
+                    <input type="text" name="website" placeholder="Website" class="control" ><br>
+                    <label>Type of Business: <select name="biztype"><br>
+                        <option disabled selected value>Select a Business Type</option><br>
+                        <option value="smallScale">Small Scale Venture</option><br>
+                        <option value="MediumScale">Medium Scale Enterprise</option><br>
+                        <option value="largeScale">Large Scale Business</option><br>
+                        <option value="others">Others</option><br>
+                        </select>
+                    </label><br>
+                    <label>Business Sector: <select name="biztype"><br>
+                        <option disabled selected value>Select a Business Sector</option><br>
+                        <option value="health">Health</option><br>
+                        <option value="banking">Banking</option><br>
+                        <option value="insurance">Insurance</option><br>
+                        <option value="technology">Technology</option><br>
+                        <option value="manufacturing">Manufaturing</option><br>
+                        <option value="transportation">Transportation</option><br>
+                        <option value="others">Others</option><br>
+                        </select>
+                    </label><br>
+                    <input type="number" name="employeeStrength" placeholder="Employee Strength" class="control" >
+                    <input type="number" name="phone" placeholder="Gross Annual Income" class="control" >
+                    <input type="number" name="pAddress" placeholder="How Much Grant Needed?" class="control"><br>
+                    <input type="text" name="pAddress" placeholder="Postal Address" class="control"><br>
+                    <input type="number" name="pAddress" placeholder="Postal Code" class="control"><br>
+                    <label>City: <input type="text"></label><br>
+                    <label>State: <input type="text"></label><br>
+                    <label>Country: <select id="counryDrop" name="country"><br>
+                        <option disabled selected value>Select a Country</option><br>
+                        <option value="student">Afghanistan</option><br>
+                        <option value="fulltimejob">Brazil</option><br>
+                        <option value="fulltimelearner">Canada</option><br>
+                        <option value="prefernottosay">Nigeria</option><br>
+                        <option value="other">United Kingdom</option><br>
+                        <option value="other">United States of America</option><br>
+                        </select>
+                    </label><br>
+                    <input type="submit" value="NEXT">
+                </fieldset>
+            </div>
+            <div class="rightDiv">
+                <h3>Step 2: Institution Data Form</h3>
+                <p>This form requires the information of the institution. Classification of institutions listed in the dropdown help the grant donors
+                    understand the particular needs of the business. Please ensure the appropriate data is entered in the respective fields
+                    as this will help in the processing time of the grants. Note that all fields are mandatory and do click "NEXT" to move to the next form
+                </p>
+            </div>
+        </div>
+        <div id="stepThree">
+            <div class="leftDiv">
+                <fieldset>
+                    <input type="number" name="bizName" placeholder="Enter Amount in USD"><br>
+                    <textarea placeholder="Enter purpose of the amount stated"></textarea><br>
+                    <input type="number" name="bizName" placeholder="Enter Amount in USD"><br>
+                    <textarea placeholder="Enter purpose of the amount stated"></textarea><br>
+                    <input type="number" name="bizName" placeholder="Enter Amount in USD"><br>
+                    <textarea placeholder="Enter purpose of the amount stated"></textarea><br>
+                    <input type="number" name="bizName" placeholder="Enter Amount in USD"><br>
+                    <textarea placeholder="Enter purpose of the amount stated"></textarea><br>
+                    <input type="number" name="bizName" placeholder="Enter Amount in USD"><br>
+                    <textarea placeholder="Enter purpose of the amount stated"></textarea><br>
+                    <input type="number" name="bizName" placeholder="Enter Amount in USD"><br>
+                    <textarea placeholder="Enter purpose of the amount stated"></textarea><br>
+                    <input type="submit" value="SUBMIT">
+                </fieldset>
+            </div>
+            <div class="rightDiv">
+                <h3>Step 3: Grant Utilization Data Form</h3>
+                <p>This form requires information about how the grant obtained will be utilized. Give a breakdown of the various grant sums needed and an
+                    explanation of how these sums will be utilised. Please ensure the appropriate data is entered in the respective fields
+                    as this will help in the processing time of the grants. Note that all fields are mandatory and do click "SUBMIT" to move to the next form
+                </p>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>    
+    <script src="form.js"></script>
+</body>
+</html>
